@@ -33,6 +33,8 @@ get_header(); ?>
 					comments_template();
 				endif;
 				echo types_render_field("email", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
+				echo types_render_field("image", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
+				echo types_render_field("phone", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
 			?>
 
 		<?php endwhile; // End of the loop. ?>
