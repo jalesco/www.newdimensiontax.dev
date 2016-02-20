@@ -12,7 +12,4 @@
  /* == Add your own styles below this line ==
 --------------------------------------------*/
 
-.red{
-	background: red;
-
-}
+.banner-btn button {display:none;}
