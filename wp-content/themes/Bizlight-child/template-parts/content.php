@@ -1,31 +1,30 @@
 <?php
 /**
- * Template part for displaying single posts.
+ * Template part for displaying posts.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Bizlight
  */
-
+global $bizlight_customizer_all_values;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
 	<header class="entry-header">
+		
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+
+		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php bizlight_posted_on(); ?>
+			<?php bizlight_posted_on(); //Technically "the_time()" for this theme?> 
 		</div><!-- .entry-meta -->
+		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
-		if( has_post_thumbnail()){
-			echo "<div class='image-full'>";
-			the_post_thumbnail('full');
-			echo "</div>";/*div end*/
-		}
+		the_excerpt();
 		?>
-		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bizlight' ),
@@ -34,10 +33,9 @@
 		?>
 	</div><!-- .entry-content -->
 
-
+	
 
 	<footer class="entry-footer">
 		<?php bizlight_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-

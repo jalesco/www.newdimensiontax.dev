@@ -15,7 +15,7 @@ global $bizlight_customizer_all_values;
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php bizlight_posted_on(); ?>
+			<?php bizlight_posted_on(); //Technically "the_time()" for this theme?> 
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -31,6 +31,8 @@ global $bizlight_customizer_all_values;
 			) );
 		?>
 	</div><!-- .entry-content -->
+
+	
 
 	<footer class="entry-footer">
 		<?php bizlight_entry_footer(); ?>

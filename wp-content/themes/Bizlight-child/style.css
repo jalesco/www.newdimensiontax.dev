@@ -15,4 +15,5 @@
 
 /*This syntax shows */
 .banner-btn.button  {display: none !important;}
+.bx-pager-link.active {display : none !important;}
 
