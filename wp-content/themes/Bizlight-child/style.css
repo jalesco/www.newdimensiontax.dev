@@ -13,9 +13,11 @@
 --------------------------------------------*/
 
 
-/*This syntax shows */
+/*CSS for home page*/
 .banner-btn.button  {display: none !important;}
 .bx-pager-link.active {display : none !important;}
+.about-list-content p{display : none;}
 
-.test p {color: purple !important;}
 
+
+.evision-slider-caption .main-title{color: red !important;}

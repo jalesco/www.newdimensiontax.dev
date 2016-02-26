@@ -21,7 +21,7 @@ get_header(); ?>
 		<?php 
 		while ( have_posts() ) : the_post(); //start of loop ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<?php get_template_part( 'template-parts/content', 'accountant' ); ?>
 
 			<?php the_post_navigation(); ?>
 
