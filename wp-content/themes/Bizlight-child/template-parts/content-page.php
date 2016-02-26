@@ -19,7 +19,7 @@
 			echo "</div>";/*div end*/
 		}
 		?>
-		<?php the_content(); ?>
+		<?php the_content('<div class="test">','</div>'); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bizlight' ),
